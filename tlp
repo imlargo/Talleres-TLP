@@ -1,6 +1,0 @@
-
-
-%Eliminar elemento de una lista:
-test(_, [], []):- !.
-
-test(E, [H | T], X) :- test(E, T, TEMP), append(H, TEMP, R), X is R.
