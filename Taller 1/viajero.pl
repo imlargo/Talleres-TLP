@@ -1,6 +1,4 @@
-conexion(medellin,  santander, avion, 100).
-conexion(santander, codazzi, bus, 100).
-conexion(codazzi, sexo, burra, 1).
+conexion(lugar1, lugar2, bus, 100)
     
 ruta(Origen, Destino, Ruta, Precio, Total, Trasportes) :-
     ruta(Origen, Destino, [Origen], Ruta, Precio, Total, Trasportes, [], 0, []), 
