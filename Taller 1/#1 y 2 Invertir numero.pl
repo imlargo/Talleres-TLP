@@ -1,16 +1,19 @@
 %primera manera?
-alo(N, X) :-
-    sexo(N, "", Y),
+invertir_num(N, X) :-
+    invertir_num(N, "", Y),
     number_string(X, Y).
 
-alo(0, C, C) :- !.
+invertir_num(0, C, C) :- !.
 
-alo(N, C, X) :-
+invertir_num(N, C, X) :-
     Head is N // 10,
 	Tail is N mod 10,
     number_string(Tail, L),
 	string_concat(C, L, Final),
-  	sexo(Head, Final, X).
+  	invertir_num(Head, Final, X).
+
+
+
 
 
 %segunda manera?
