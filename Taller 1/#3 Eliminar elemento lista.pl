@@ -17,16 +17,16 @@ eliminar(E, [H | T], C, R) :-
 concatenar_lista([], Lista, Lista).   
 concatenar_lista([H|T], A, [H|T1]) :- concatenar_lista(T, A, T1).
 
-eliminar(E, L, R):-
-    eliminar(E, L, [], R), !.
+quitar(E, L, N):-
+    quitar(E, L, [], N), !.
 
-eliminar(_, [], C, C) :- !.
+quitar(_, [], C, C) :- !.
 
-eliminar(E, [H | T], C, R):-
+quitar(E, [H | T], C, N):-
     H \== E,
     concatenar_lista(C, [H], Y),
-    eliminar(E, T, Y, R).
+    quitar(E, T, Y, N).
 
-eliminar(E, [H | T], C, R) :-
+quitar(E, [H | T], C, N) :-
     H == E,
-    eliminar(E, T, C, R).
+    quitar(E, T, C, N).
