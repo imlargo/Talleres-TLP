@@ -13,11 +13,11 @@ invertir_num(N, C, X) :-
   	invertir_num(Head, Final, X).
 
 
-
-
-
 %segunda manera?
 invertir(0, C, C) :- !.
+
+invertir(N, R) :-
+    invertir_numero(N, 0, R).
 
 invertir(N, C, R) :-
     N > 0,
@@ -25,6 +25,3 @@ invertir(N, C, R) :-
     C2 is C * 10 + Digito,
     NuevoNumero is N // 10,
     invertir_numero(NuevoNumero, C2, R).
-	
-invertir(N, R) :-
-    invertir_numero(N, 0, R).
