@@ -23,3 +23,30 @@ fibn(N, A, B, Resultado) :-
     write(N),nl,write(A),nl, write(B),nl,write("..."),nl,
     Suma is A + B,
     fibn(N1, B, Suma, Resultado).
+
+%Como lo piden en el taller
+
+%Hechos
+fibonacci(1, 1) :- !.
+fibonacci(0, 0) :- !.
+
+%Fibonacci sin tail
+fibonacci(X, Y) :-
+    X1 is (X-1),
+    X2 is (X-2),
+    fibonacci(X1, F1),
+    fibonacci(X2, F2),
+    Y is F1 + F2.
+
+
+%Fibonacci con tail
+fibonacci_tail(X, Y) :-
+    fibt(X, 0, 1, Y).
+
+fibt(0, A, _, A) :-!.
+
+fibt(X, A, B, Y) :-
+    X > 0,
+    X1 is X - 1,
+    Suma is A + B,
+    fibt(X1, B, Suma, Y).
