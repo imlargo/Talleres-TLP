@@ -2,12 +2,10 @@
 num(1). num(2). num(3). num(4).
 
 % REGLAS
-
 unicos(P,Q,R,S) :- 
     num(P), num(Q),num(R), num(S),
     \+ P=Q, \+ P=R, \+ P=S, \+ Q=R, \+ Q=S, \+ R=S.
 
-%IDEA ESTRUCTURA DE LA SOLUCIÓN
 sudoku(R11,R12,R13,R14,R21,R22,R23,R24,R31,R32,R33,R34,R41,R42,R43,R44) :-
     
     %Columnas unicas
