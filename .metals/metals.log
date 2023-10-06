@@ -1518,3 +1518,5 @@ WARNING: Unmatched cancel notification for request id 2763
 2023.10.06 14:17:02 INFO  time: compiled proyectos-tlp_bd2c96d2de in 50ms
 Oct 06, 2023 2:17:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Oct 06, 2023 2:17:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
