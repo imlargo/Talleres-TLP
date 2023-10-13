@@ -1520,3 +1520,600 @@ Oct 06, 2023 2:17:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 INFO: Unsupported notification method: $/setTrace
 Oct 06, 2023 2:17:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.10.13 14:19:20 INFO  Started: Metals version 1.0.1 in folders '/workspaces/proyectos-tlp' for client Visual Studio Code 1.83.1.
+Oct 13, 2023 2:19:20 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Oct 13, 2023 2:19:20 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Oct 13, 2023 2:19:20 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Oct 13, 2023 2:19:24 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/workspaces/proyectos-tlp/.metals/metals (H2 2.1)
+Oct 13, 2023 2:19:24 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.027s)
+Oct 13, 2023 2:19:24 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Oct 13, 2023 2:19:24 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.10.13 14:19:24 INFO  time: initialize in 4.43s
+2023.10.13 14:19:27 WARN  scala-cli >= 0.1.3 not found in PATH, fetching and starting a JVM-based Scala CLI
+2023.10.13 14:19:29 INFO  Running List(/usr/local/sdkman/candidates/java/17.0.8.1-ms/bin/java, -cp, /home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/cli_3/1.0.4/cli_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/alexarchambault/case-app_3/2.1.0-M25/case-app_3-2.1.0-M25.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-launcher_2.13/2.1.5/coursier-launcher_2.13-2.1.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-proxy-setup/2.1.5/coursier-proxy-setup-2.1.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/publish/publish_2.13/0.1.4/publish_2.13-0.1.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/jimfs/jimfs/1.3.0/jimfs-1.3.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/jniutils/windows-jni-utils/0.3.3/windows-jni-utils-0.3.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_3/2.13.5.2/jsoniter-scala-core_3-2.13.5.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/libsodiumjni/0.0.3/libsodiumjni-0.0.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_3/0.11.1/metaconfig-typesafe-config_3-0.11.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/ai/kien/python-native-libs_3/0.2.4/python-native-libs_3-0.2.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-packager_2.13/0.1.29/scala-packager_2.13-0.1.29.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli-signing/cli_3/0.2.2/cli_3-0.2.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-nop/2.0.7/slf4j-nop-2.0.7.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/client3/core_2.13/3.8.16/core_2.13-3.8.16.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.0/scala3-library_3-3.3.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/build-module_3/1.0.4/build-module_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/config_3/1.0.4/config_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/scala3-graal_3/1.0.4/scala3-graal_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/specification-level_3/1.0.4/specification-level_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/alexarchambault/case-app-annotations_3/2.1.0-M25/case-app-annotations_3-2.1.0-M25.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/alexarchambault/case-app-util_3/2.1.0-M25/case-app-util_3-2.1.0-M25.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_3/0.3.0/sourcecode_3-0.3.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.11.0/scala-collection-compat_2.13-2.11.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/scala-cli/tmp/zip-input-stream/0.1.1/zip-input-stream-0.1.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/ai/kien/python-native-libs_2.13/0.2.4/python-native-libs_2.13-0.2.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.11/scala-library-2.13.11.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-cache_2.13/2.1.5/coursier-cache_2.13-2.1.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-core_2.13/2.1.5/coursier-core_2.13-2.1.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.13/2.13.15/jsoniter-scala-core_2.13-2.13.15.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.12.1/jna-platform-5.12.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/geirsson/metaconfig-core_3/0.11.1/metaconfig-core_3-0.11.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_3/2.11.0/scala-collection-compat_3-2.11.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/cloud/tools/jib-core/0.22.0/jib-core-0.22.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/os-lib_2.13/0.8.1/os-lib_2.13-0.8.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk18on/1.73/bcpg-jdk18on-1.73.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli-signing/shared_3/0.2.2/shared_3-0.2.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/model/core_2.13/1.5.5/core_2.13-1.5.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/core_2.13/1.3.13/core_2.13-1.3.13.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/sttp/shared/ws_2.13/1.3.13/ws_2.13-1.3.13.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/scala-cli/java-class-name_3/0.1.0/java-class-name_3-0.1.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.7/trees_2.13-4.8.7.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-native/test-runner_3/0.4.14/test-runner_3-0.4.14.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/os-lib_3/0.9.1/os-lib_3-0.9.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_3/0.8.1/pprint_3-0.8.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-env-nodejs_2.13/1.4.0/scalajs-env-nodejs_2.13-1.4.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-sbt-test-adapter_2.13/1.13.2/scalajs-sbt-test-adapter_2.13-1.13.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.10/file-tree-views-2.1.10.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/options_3/1.0.4/options_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/directives_3/1.0.4/directives_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/scala-cli-bsp/1.0.4/scala-cli-bsp-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/test-runner_2.13/1.0.4/test-runner_2.13-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/tasty-lib_3/1.0.4/tasty-lib_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/4.7.1/plexus-archiver-4.7.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/2.1.1/plexus-container-default-2.1.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/windows-ansi/windows-ansi/0.0.5/windows-ansi-0.0.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-util_2.13/2.1.5/coursier-util_2.13-2.1.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/concurrent-reference-hash-map/1.1.0/concurrent-reference-hash-map-1.1.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.1.0/scala-xml_2.13-2.1.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/geirsson/metaconfig-pprint_3/0.11.1/metaconfig-pprint_3-0.11.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/paiges-core_3/0.4.2/paiges-core_3-0.4.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/cloud/tools/jib-build-plan/0.4.0/jib-build-plan-0.4.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/http-client/google-http-client/1.34.0/google-http-client-1.34.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/http-client/google-http-client-apache-v2/1.34.0/google-http-client-apache-v2-1.34.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/auth/google-auth-library-oauth2-http/0.18.0/google-auth-library-oauth2-http-0.18.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.23.0/commons-compress-1.23.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.13/0.7.1/geny_2.13-0.7.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk18on/1.73/bcprov-jdk18on-1.73.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.1.2/scala3-compiler_3-3.1.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.7/common_2.13-4.8.7.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-native/tools_3/0.4.14/tools_3-0.4.14.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_3/1.0.0/geny_3-1.0.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_3/0.4.0/fansi_3-0.4.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-js-envs_2.13/1.4.0/scalajs-js-envs_2.13-1.4.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.13/1.5.5/bloop-config_2.13-1.5.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/core_3/1.0.4/core_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/using_directives/1.1.0/using_directives-1.1.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/virtuslab/scala-cli/build-macros_3/1.0.4/build-macros_3-1.0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bsp4j/2.1.0-M5/bsp4j-2.1.0-M5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/3.4.1/plexus-io-3.4.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/iq80/snappy/snappy/0.4/snappy-0.4.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.5-2/zstd-jni-1.5.5-2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/xbean/xbean-reflect/3.7/xbean-reflect-3.7.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/opencensus/opencensus-api/0.24.0/opencensus-api-0.24.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/opencensus/opencensus-contrib-http-util/0.24.0/opencensus-contrib-http-util-0.24.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/auto/value/auto-value-annotations/1.6.6/auto-value-annotations-1.6.6.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/auth/google-auth-library-credentials/0.18.0/google-auth-library-credentials-0.18.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/http-client/google-http-client-jackson2/1.32.1/google-http-client-jackson2-1.32.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.1.2/scala3-interfaces-3.1.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.1.2/tasty-core_3-3.1.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.1.0-scala-1/scala-asm-9.1.0-scala-1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.3.0/sourcecode_2.13-0.3.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime_2.13/0.11.13/scalapb-runtime_2.13-0.11.13.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-native/nir_3/0.4.14/nir_3-0.4.14.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-native/util_3/0.4.14/util_3-0.4.14.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parallel-collections_3/1.0.3/scala-parallel-collections_3-1.0.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-logging_2.13/1.1.1/scalajs-logging_2.13-1.1.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/bleep/bloop-rifle_2.13/1.5.9-sc-1/bloop-rifle_2.13-1.5.9-sc-1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-jvm_2.13/2.1.5/coursier-jvm_2.13-2.1.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/dependency_3/0.2.3/dependency_3-0.2.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/6.6.0.202305301015-r/org.eclipse.jgit-6.6.0.202305301015-r.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-js/scalajs-env-jsdom-nodejs_2.13/1.1.0/scalajs-env-jsdom-nodejs_2.13-1.1.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/lsp4j/org.eclipse.lsp4j.generator/0.20.1/org.eclipse.lsp4j.generator-0.20.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/lsp4j/org.eclipse.lsp4j.jsonrpc/0.20.1/org.eclipse.lsp4j.jsonrpc-0.20.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/grpc/grpc-context/1.22.1/grpc-context-1.22.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.19.6/protobuf-java-3.19.6.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thesamet/scalapb/lenses_2.13/0.11.13/lenses_2.13-0.11.13.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/libdaemon/libdaemon_2.13/0.0.11/libdaemon_2.13-0.0.11.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/scala-cli/snailgun/snailgun-core_2.13/0.4.1-sc2/snailgun-core_2.13-0.4.1-sc2.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/alexarchambault/argonaut-shapeless_6.3_2.13/1.3.1/argonaut-shapeless_6.3_2.13-1.3.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier_2.13/2.1.5/coursier_2.13-2.1.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/coursier-env_2.13/2.1.5/coursier-env_2.13-2.1.5.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.2.3/JavaEWAH-1.2.3.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/xtend/org.eclipse.xtend.lib/2.28.0/org.eclipse.xtend.lib-2.28.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/io/argonaut/argonaut_2.13/6.3.8/argonaut_2.13-6.3.8.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.9/shapeless_2.13-2.3.9.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/xtext/org.eclipse.xtext.xbase.lib/2.28.0/org.eclipse.xtext.xbase.lib-2.28.0.jar:/home/codespace/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/xtend/org.eclipse.xtend.lib.macro/2.28.0/org.eclipse.xtend.lib.macro-2.28.0.jar, scala.cli.ScalaCli, bsp, /workspaces/proyectos-tlp)
+2023.10.13 14:19:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /workspaces/proyectos-tlp/.metals/bsp.trace.json or /home/codespace/.cache/metals/bsp.trace.json
+2023.10.13 14:19:34 INFO  Scala CLI: Starting compilation server
+2023.10.13 14:19:42 INFO  Scala CLI: Checking https://repo1.maven.org/maven2/org/scala-lang/scala-library/
+2023.10.13 14:19:42 INFO  Scala CLI: Checked https://repo1.maven.org/maven2/org/scala-lang/scala-library/
+2023.10.13 14:19:42 INFO  Scala CLI: Checking https://repo1.maven.org/maven2/org/scala-lang/scala-library/maven-metadata.xml
+2023.10.13 14:19:42 INFO  Scala CLI: Checked https://repo1.maven.org/maven2/org/scala-lang/scala-library/maven-metadata.xml
+2023.10.13 14:19:42 INFO  Scala CLI: Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/
+2023.10.13 14:19:42 INFO  Scala CLI: Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/
+2023.10.13 14:19:42 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/
+2023.10.13 14:19:42 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/
+2023.10.13 14:19:42 INFO  Scala CLI: Checking https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+2023.10.13 14:19:42 INFO  Scala CLI: Checked https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+2023.10.13 14:19:42 INFO  Scala CLI: Downloading https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+2023.10.13 14:19:42 INFO  Scala CLI: Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/maven-metadata.xml
+2023.10.13 14:19:43 INFO  Connected to Scala CLI server v1.0.4
+2023.10.13 14:19:45 INFO  compiling proyectos-tlp_bd2c96d2de (1 scala source)
+2023.10.13 14:19:50 INFO  time: compiled proyectos-tlp_bd2c96d2de in 5.45s
+2023.10.13 14:19:50 INFO  compiling proyectos-tlp_bd2c96d2de (1 scala source)
+2023.10.13 14:19:50 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.54s
+2023.10.13 14:20:08 INFO  time: indexed workspace in 24s
+2023.10.13 14:20:08 INFO  Scala CLI started for /workspaces/proyectos-tlp
+2023.10.13 14:20:08 WARN  Build server is not auto-connectable.
+2023.10.13 14:20:08 WARN  no build tool detected in workspace '/workspaces/proyectos-tlp'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.10.13 14:20:25 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:20:27 INFO  time: compiled proyectos-tlp_bd2c96d2de in 1.35s
+2023.10.13 14:20:27 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:20:27 ERROR Unexpected error when copying /workspaces/proyectos-tlp/.scala-build/.bloop/proyectos-tlp_bd2c96d2de/bloop-internal-classes/main-7VY6N7uPSpiaCrryAWHk2g==/Test$.class to /workspaces/proyectos-tlp/.scala-build/proyectos-tlp_bd2c96d2de/classes/main/Test$.class, you might need to restart the build server.
+2023.10.13 14:20:27 ERROR Unexpected error when copying /workspaces/proyectos-tlp/.scala-build/.bloop/proyectos-tlp_bd2c96d2de/bloop-internal-classes/main-7VY6N7uPSpiaCrryAWHk2g==/Test.tasty to /workspaces/proyectos-tlp/.scala-build/proyectos-tlp_bd2c96d2de/classes/main/Test.tasty, you might need to restart the build server.
+2023.10.13 14:20:27 INFO  Deduplicating compilation of proyectos-tlp_bd2c96d2de from bsp client 'scala-cli 1.0.4' (since 45.955s)
+2023.10.13 14:20:27 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:20:28 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.7s
+2023.10.13 14:20:29 INFO  time: indexed workspace in 4.1s
+2023.10.13 14:20:30 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:20:32 INFO  time: compiled proyectos-tlp_bd2c96d2de in 1.7s
+2023.10.13 14:22:24 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:22:24 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.68s
+Oct 13, 2023 2:22:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 31
+2023.10.13 14:22:31 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:22:31 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.66s
+2023.10.13 14:22:37 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:22:37 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.38s
+2023.10.13 14:22:38 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:22:38 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.64s
+2023.10.13 14:23:46 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:23:46 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.52s
+2023.10.13 14:23:47 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:23:47 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.22s
+2023.10.13 14:23:50 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:23:50 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.44s
+2023.10.13 14:23:54 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:23:54 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.24s
+2023.10.13 14:24:03 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:24:03 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.25s
+2023.10.13 14:24:08 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:24:08 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.24s
+2023.10.13 14:24:10 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:24:10 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.35s
+2023.10.13 14:24:23 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:24:23 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:24:23 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.33s
+2023.10.13 14:24:24 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:24:32 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:24:32 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.28s
+2023.10.13 14:24:34 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:24:34 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.16s
+2023.10.13 14:24:37 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:24:44 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:24:44 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.25s
+2023.10.13 14:24:47 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:24:47 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.16s
+2023.10.13 14:24:47 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:24:49 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.29s
+2023.10.13 14:24:53 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+Oct 13, 2023 2:24:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 263
+2023.10.13 14:24:54 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:25:08 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:25:08 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.2s
+2023.10.13 14:25:09 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:01 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:01 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.59s
+Oct 13, 2023 2:26:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 306
+Oct 13, 2023 2:26:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 308
+2023.10.13 14:26:03 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:05 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:05 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.22s
+2023.10.13 14:26:06 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:07 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:07 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.44s
+2023.10.13 14:26:08 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:10 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:11 INFO  time: compiled proyectos-tlp_bd2c96d2de in 1.31s
+2023.10.13 14:26:12 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:15 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:17 INFO  time: compiled proyectos-tlp_bd2c96d2de in 1.06s
+2023.10.13 14:26:17 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:18 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:19 INFO  time: compiled proyectos-tlp_bd2c96d2de in 1.05s
+2023.10.13 14:26:20 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:21 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:21 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.93s
+Oct 13, 2023 2:26:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 384
+2023.10.13 14:26:23 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:23 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:24 INFO  time: compiled proyectos-tlp_bd2c96d2de in 1.08s
+2023.10.13 14:26:25 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:25 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:25 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.27s
+2023.10.13 14:26:26 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:33 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:33 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.16s
+2023.10.13 14:26:33 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:34 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:34 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.18s
+2023.10.13 14:26:35 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:26:40 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:26:40 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.81s
+2023.10.13 14:26:42 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:02 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:02 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.22s
+2023.10.13 14:33:03 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:03 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:03 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.14s
+2023.10.13 14:33:04 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:05 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:05 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.8s
+2023.10.13 14:33:06 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:09 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:09 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.27s
+2023.10.13 14:33:10 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:10 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:12 INFO  time: compiled proyectos-tlp_bd2c96d2de in 1.34s
+2023.10.13 14:33:12 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:12 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:13 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.91s
+2023.10.13 14:33:13 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:23 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:23 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.73s
+Oct 13, 2023 2:33:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 577
+2023.10.13 14:33:25 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:39 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:39 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.61s
+2023.10.13 14:33:40 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:41 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:41 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.56s
+2023.10.13 14:33:43 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:54 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:54 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.67s
+2023.10.13 14:33:55 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:33:59 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:33:59 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.73s
+2023.10.13 14:34:01 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:34:01 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:34:01 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.53s
+2023.10.13 14:34:02 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:34:03 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:34:03 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.14s
+2023.10.13 14:34:04 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:34:28 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:34:28 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.13s
+2023.10.13 14:34:29 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:34:32 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:34:32 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.19s
+2023.10.13 14:34:32 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:34:36 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:34:36 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.14s
+2023.10.13 14:34:36 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:34:43 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:34:43 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+2023.10.13 14:34:44 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+Oct 13, 2023 2:34:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 775
+Oct 13, 2023 2:34:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 776
+2023.10.13 14:34:51 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:34:51 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.53s
+2023.10.13 14:34:53 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:34:54 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:34:54 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.16s
+2023.10.13 14:34:54 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:34:56 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:34:56 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.13s
+2023.10.13 14:34:57 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:35:03 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:03 INFO  time: compiled proyectos-tlp_bd2c96d2de in 93ms
+2023.10.13 14:35:04 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+Oct 13, 2023 2:35:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 865
+2023.10.13 14:35:25 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:25 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.15s
+2023.10.13 14:35:25 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:35:26 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:26 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.15s
+Could not find TASTY file Test.tasty under /workspaces/proyectos-tlp/.scala-build/proyectos-tlp_bd2c96d2de/classes/main
+2023.10.13 14:35:27 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:35:30 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:30 INFO  time: compiled proyectos-tlp_bd2c96d2de in 97ms
+2023.10.13 14:35:31 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:35:36 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:36 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.11s
+2023.10.13 14:35:36 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:35:38 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:38 INFO  time: compiled proyectos-tlp_bd2c96d2de in 78ms
+2023.10.13 14:35:38 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:35:40 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:40 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.17s
+2023.10.13 14:35:41 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:35:41 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:41 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.1s
+2023.10.13 14:35:42 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:35:44 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:44 INFO  time: compiled proyectos-tlp_bd2c96d2de in 89ms
+2023.10.13 14:35:45 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:35:52 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:35:52 INFO  time: compiled proyectos-tlp_bd2c96d2de in 91ms
+2023.10.13 14:35:52 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:05 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:05 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.31s
+2023.10.13 14:38:06 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+Oct 13, 2023 2:38:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1054
+2023.10.13 14:38:15 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:15 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.41s
+2023.10.13 14:38:15 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:16 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:17 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.39s
+2023.10.13 14:38:17 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:20 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:20 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.28s
+2023.10.13 14:38:21 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:27 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:27 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.27s
+2023.10.13 14:38:27 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:27 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:27 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.22s
+2023.10.13 14:38:27 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:29 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:29 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.16s
+2023.10.13 14:38:30 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:32 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:32 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.13s
+2023.10.13 14:38:33 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:41 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:41 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.17s
+2023.10.13 14:38:42 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:43 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:43 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.23s
+2023.10.13 14:38:43 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:44 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:44 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+2023.10.13 14:38:44 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:47 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:47 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.13s
+2023.10.13 14:38:47 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:49 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:49 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.18s
+2023.10.13 14:38:50 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:38:58 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:38:58 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.13s
+2023.10.13 14:38:58 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:05 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:05 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.11s
+2023.10.13 14:39:06 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:08 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:08 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.13s
+2023.10.13 14:39:09 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:11 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:11 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.19s
+2023.10.13 14:39:12 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:12 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:12 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.11s
+2023.10.13 14:39:13 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:12 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:13 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+2023.10.13 14:39:13 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+Oct 13, 2023 2:39:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1325
+2023.10.13 14:39:17 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:17 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.13s
+2023.10.13 14:39:18 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:25 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:25 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.34s
+2023.10.13 14:39:26 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:28 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:28 INFO  time: compiled proyectos-tlp_bd2c96d2de in 99ms
+2023.10.13 14:39:28 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:32 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:32 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.1s
+2023.10.13 14:39:33 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:33 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:33 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.15s
+2023.10.13 14:39:34 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:39 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:39 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+2023.10.13 14:39:40 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:43 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:43 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.11s
+2023.10.13 14:39:44 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:47 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:47 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.14s
+2023.10.13 14:39:48 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:56 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:56 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.1s
+2023.10.13 14:39:57 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:39:56 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:39:56 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.11s
+2023.10.13 14:39:57 WARN  Could not load snapshot text for /workspaces/proyectos-tlp/Main.scala
+2023.10.13 14:44:08 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:08 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.14s
+2023.10.13 14:44:12 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:12 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.5s
+2023.10.13 14:44:15 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:15 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.47s
+2023.10.13 14:44:20 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:20 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+2023.10.13 14:44:24 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:24 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.11s
+2023.10.13 14:44:24 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:24 INFO  time: compiled proyectos-tlp_bd2c96d2de in 89ms
+2023.10.13 14:44:27 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:27 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+2023.10.13 14:44:29 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:29 INFO  time: compiled proyectos-tlp_bd2c96d2de in 91ms
+2023.10.13 14:44:35 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:35 INFO  time: compiled proyectos-tlp_bd2c96d2de in 90ms
+2023.10.13 14:44:40 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:40 INFO  time: compiled proyectos-tlp_bd2c96d2de in 90ms
+2023.10.13 14:44:43 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:43 INFO  time: compiled proyectos-tlp_bd2c96d2de in 94ms
+2023.10.13 14:44:51 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:51 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.39s
+2023.10.13 14:44:55 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:55 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.8s
+2023.10.13 14:44:58 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:44:58 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.1s
+Oct 13, 2023 2:45:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1748
+2023.10.13 14:45:01 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:45:01 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.4s
+2023.10.13 14:45:03 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:45:03 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.56s
+Oct 13, 2023 2:45:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1781
+2023.10.13 14:45:24 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:45:24 INFO  time: compiled proyectos-tlp_bd2c96d2de in 84ms
+2023.10.13 14:46:34 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:46:34 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.14s
+2023.10.13 14:46:37 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:46:37 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+2023.10.13 14:46:40 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:46:40 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.13s
+2023.10.13 14:46:43 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:46:43 INFO  time: compiled proyectos-tlp_bd2c96d2de in 99ms
+2023.10.13 14:46:49 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:46:49 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.17s
+2023.10.13 14:46:53 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:46:53 INFO  time: compiled proyectos-tlp_bd2c96d2de in 89ms
+2023.10.13 14:46:59 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:46:59 INFO  time: compiled proyectos-tlp_bd2c96d2de in 86ms
+2023.10.13 14:47:02 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:02 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.15s
+2023.10.13 14:47:05 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:05 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.24s
+2023.10.13 14:47:05 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:05 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.3s
+2023.10.13 14:47:19 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:19 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.28s
+2023.10.13 14:47:21 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:21 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.1s
+2023.10.13 14:47:34 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:34 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.26s
+2023.10.13 14:47:37 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:37 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.29s
+2023.10.13 14:47:41 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:41 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.1s
+2023.10.13 14:47:49 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:49 INFO  time: compiled proyectos-tlp_bd2c96d2de in 91ms
+2023.10.13 14:47:58 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:47:58 INFO  time: compiled proyectos-tlp_bd2c96d2de in 90ms
+Oct 13, 2023 2:48:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1997
+2023.10.13 14:48:15 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:48:15 INFO  time: compiled proyectos-tlp_bd2c96d2de in 87ms
+2023.10.13 14:48:17 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:48:17 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.1s
+Oct 13, 2023 2:48:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2020
+2023.10.13 14:48:26 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:48:26 INFO  time: compiled proyectos-tlp_bd2c96d2de in 97ms
+Oct 13, 2023 2:48:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2047
+2023.10.13 14:48:29 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:48:29 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.1s
+2023.10.13 14:48:38 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:48:38 INFO  time: compiled proyectos-tlp_bd2c96d2de in 84ms
+2023.10.13 14:48:40 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:48:40 INFO  time: compiled proyectos-tlp_bd2c96d2de in 74ms
+2023.10.13 14:48:43 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:48:43 INFO  time: compiled proyectos-tlp_bd2c96d2de in 73ms
+2023.10.13 14:48:45 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:48:45 INFO  time: compiled proyectos-tlp_bd2c96d2de in 82ms
+2023.10.13 14:48:48 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:48:48 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+Oct 13, 2023 2:48:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2111
+2023.10.13 14:49:09 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:49:09 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+2023.10.13 14:49:09 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:49:10 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.12s
+2023.10.13 14:49:54 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:49:54 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.44s
+2023.10.13 14:49:56 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:49:56 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.33s
+2023.10.13 14:50:00 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:50:00 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.11s
+2023.10.13 14:50:59 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:50:59 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.11s
+2023.10.13 14:51:05 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:51:05 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.17s
+2023.10.13 14:51:05 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:51:06 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.13s
+2023.10.13 14:51:07 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:51:07 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.25s
+2023.10.13 14:51:09 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:51:09 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.28s
+2023.10.13 14:51:26 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:51:26 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.29s
+2023.10.13 14:51:38 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:51:38 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.35s
+2023.10.13 14:51:43 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:51:43 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.45s
+2023.10.13 14:51:46 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:51:46 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.29s
+2023.10.13 14:51:57 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:51:57 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.29s
+2023.10.13 14:52:52 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:52:52 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.39s
+2023.10.13 14:53:03 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:53:03 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.45s
+2023.10.13 14:53:29 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:53:29 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.26s
+2023.10.13 14:53:33 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:53:33 INFO  time: compiled proyectos-tlp_bd2c96d2de in 89ms
+2023.10.13 14:54:08 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:54:08 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.14s
+Oct 13, 2023 2:54:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2435
+2023.10.13 14:54:13 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:54:13 INFO  time: compiled proyectos-tlp_bd2c96d2de in 82ms
+2023.10.13 14:54:15 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:54:15 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.25s
+2023.10.13 14:54:21 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:54:21 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.1s
+2023.10.13 14:54:23 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:54:23 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.17s
+2023.10.13 14:54:44 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:54:44 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.25s
+2023.10.13 14:54:53 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:54:53 INFO  time: compiled proyectos-tlp_bd2c96d2de in 90ms
+2023.10.13 14:54:55 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:54:55 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.18s
+2023.10.13 14:54:58 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:54:58 INFO  time: compiled proyectos-tlp_bd2c96d2de in 67ms
+2023.10.13 14:55:07 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:55:07 INFO  time: compiled proyectos-tlp_bd2c96d2de in 88ms
+2023.10.13 14:55:09 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:55:09 INFO  time: compiled proyectos-tlp_bd2c96d2de in 83ms
+2023.10.13 14:55:14 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:55:14 INFO  time: compiled proyectos-tlp_bd2c96d2de in 98ms
+2023.10.13 14:55:17 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:55:17 INFO  time: compiled proyectos-tlp_bd2c96d2de in 59ms
+2023.10.13 14:55:31 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:55:31 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.17s
+Could not find TASTY file Test.tasty under /workspaces/proyectos-tlp/.scala-build/proyectos-tlp_bd2c96d2de/classes/main
+2023.10.13 14:55:32 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:55:32 INFO  time: compiled proyectos-tlp_bd2c96d2de in 85ms
+2023.10.13 14:55:34 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:55:34 INFO  time: compiled proyectos-tlp_bd2c96d2de in 80ms
+Oct 13, 2023 2:55:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 900,
+      "uri": "file:///workspaces/proyectos-tlp/Taller%202.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "a"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: -1 is not a valid offset, allowed [0..1]
+	at scala.meta.internal.inputs.InternalInput.offsetToLine(InternalInput.scala:48)
+	at scala.meta.internal.inputs.InternalInput.offsetToLine$(InternalInput.scala:42)
+	at scala.meta.inputs.Input$VirtualFile.offsetToLine(Input.scala:80)
+	at scala.meta.inputs.Position$Range.startLine(Position.scala:39)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionMetaPosition.toLsp(ScalametaCommonEnrichments.scala:49)
+	at scala.meta.internal.parsing.TokenEditDistance$Diff.$anonfun$toRevised$1(TokenEditDistance.scala:249)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.parsing.TokenEditDistance$Diff.toRevised(TokenEditDistance.scala:168)
+	at scala.meta.internal.metals.Diagnostics.toFreshDiagnostic(Diagnostics.scala:267)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$2(Diagnostics.scala:224)
+	at scala.meta.internal.metals.Diagnostics.$anonfun$publishDiagnostics$2$adapted(Diagnostics.scala:223)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:576)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:574)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:223)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1112)
+	at scala.meta.internal.metals.WorkspaceLspService.didChange(WorkspaceLspService.scala:326)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	... 15 more
+
+2023.10.13 14:55:44 INFO  compiling proyectos-tlp_bd2c96d2de (2 scala sources)
+2023.10.13 14:55:44 INFO  time: compiled proyectos-tlp_bd2c96d2de in 0.22s
+Oct 13, 2023 2:58:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$.<clinit>(DebugProvider.scala:915)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:468)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:420)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1676)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:686)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Oct 13, 2023 2:58:07 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
