@@ -22,17 +22,24 @@ object Test {
         return f(texto) == texto
     }
     
+    
     val filtro = (letra : Char) => {
         val vocales = List('a', 'e', 'i', 'o', 'u')
         vocales.contains(letra)
     }
     
-    def vocal1( f : (Char) => Boolean, text : String ) : Unit = {
-        text.filter(f)
+    def vocal1( f : (Char) => Boolean, text : String ) : String = {
+        return text.filter(f)
     }
-        
-    def vocal2( f : (Char) => Boolean, text : String ) : Unit = {
-        text.map(f)
+
+    def vocal2( f : (Char) => Boolean, text : String ) : String = {
+        return text.map((caracter : Char) => {
+            if (f(caracter)) {
+                return caracter.toString()
+            } else {
+                return ""
+            }
+        })
     }
         
     def vocal3( f : (Char) => Boolean, text : String ) : Unit = {
