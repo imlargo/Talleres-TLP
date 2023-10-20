@@ -16,18 +16,19 @@ object Test {
     //(val).
     
     // No Cambiar este Método, es el caso de prueba
-    def main(args: Array[String]){
+    def main(args: Array[String]) : Unit = {
         val Numero = scala.io.StdIn.readInt()
         println(result(Numero))
     }
 
 
-    def gcd(a: Int, b: Int): Int = {
+
+    def gcd(a: Float, b: Float): Float = {
             if (b == 0) a
             else gcd(b, a % b)
         }
      
-    val mcd1 = (num1: Int, num2: Int, num3: Int) => {    
+    val mcd1 = (num1: Float, num2: Float, num3: Float) => {    
         val mcd1 = gcd(num1, num2)
         val mcd2 = gcd(mcd1, num3)
     
@@ -53,6 +54,3 @@ object Test {
     }
     
 }
-
-
-
