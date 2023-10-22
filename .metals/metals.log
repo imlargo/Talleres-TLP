@@ -1,0 +1,90 @@
+2023.10.22 16:13:03 INFO  Started: Metals version 1.1.0 in folders '/workspaces/Talleres-TLP' for client Visual Studio Code 1.83.1.
+2023.10.22 16:13:05 WARN  Build server is not auto-connectable.
+2023.10.22 16:13:05 WARN  no build tool detected in workspace '/workspaces/Talleres-TLP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.10.22 16:13:05 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+Oct 22, 2023 4:13:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 22, 2023 4:13:23 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.10.22 16:13:41 INFO  no build target found for /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2023.10.22 16:13:42 INFO  time: code lens generation in 16s
+2023.10.22 16:13:42 INFO  time: code lens generation in 37s
+Oct 22, 2023 4:13:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.10.22 16:13:52 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:13:54 INFO  time: code lens generation in 1.51s
+Oct 22, 2023 4:13:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 53
+2023.10.22 16:13:58 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+Oct 22, 2023 4:13:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 55
+2023.10.22 16:14:00 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:01 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:06 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:08 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+Oct 22, 2023 4:14:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ArrayIndexOutOfBoundsException: Index 12 out of bounds for length 12
+java.util.concurrent.CompletionException: java.lang.ArrayIndexOutOfBoundsException: Index 12 out of bounds for length 12
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 12 out of bounds for length 12
+	at scala.meta.internal.metals.formatting.MultilineString.$anonfun$wasTripleQuoted$1(MultilineString.scala:268)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:190)
+	at scala.meta.internal.metals.formatting.MultilineString.wasTripleQuoted(MultilineString.scala:267)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:438)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:69)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:250)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:259)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:68)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1443)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.10.22 16:14:12 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:14 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:17 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:19 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:24 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:25 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:27 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:28 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:32 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:34 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:38 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:40 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:41 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:48 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:51 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:14:56 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:00 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:04 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:07 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:09 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:14 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:16 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:19 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:27 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:32 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:35 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:39 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:43 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:15:57 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:16:05 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
+2023.10.22 16:16:07 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl.scala
