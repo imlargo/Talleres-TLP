@@ -1,5 +1,3 @@
-
-
 /*
 1 –Dada una lista de n letras distintas,
 escribir un programa en Scala usando recursión que enumere todos los subconjuntos de estas letras (sin invertir letras).
@@ -23,12 +21,111 @@ Escriba 2 programas en Scala que muestre los n primeros números triangulares us
 Ejemplo: Para n = 6, el resultado debe ser: 1, 3, 6, 10, 15, 21. 
 Adicionalmente, debe mostrar el tiempo de ejecución para c/u cuando n=100.   
 */
-//numeros triangulares = suma de n numeros
-
-
 
 /*
 4. Realizar un programa en scala con expresiones regulares, que sea capaz de
 separar correctamente entre placas de carros y motos,
 en caso de no ser ninguna de las anteriores mostrar un mensaje que lo diga.
 */
+object Vpl{
+    def main(args: Array[String]): Unit = {
+        def subconjuntoLetras(lista: List[Char]): List[String] = {
+            /*PUNTO 1*/
+            def concatenarPrimero(caracter: Char, resto: List[Char]): List[String] = {
+                if (resto.isEmpty) Nil
+                else (caracter + resto.head.toString) :: concatenarPrimero(caracter, resto.tail)
+                }
+            def concatenarLista(lista: List[Char]): List[String] = lista match {
+                case Nil => Nil
+                case cabeza :: cola => {
+                    val combinaciones = concatenarPrimero(cabeza, cola)
+                    (cabeza.toString +: combinaciones) ::: concatenarLista(cola)
+                    }
+                }
+            val resultado = concatenarLista(lista)
+            println(resultado.mkString(" "))
+            resultado
+        }
+        val lista1 : List[Char] = List('a','b','c','d','e')
+        val concatenacion = subconjuntoLetras(lista1)
+
+        /*PUNTO 2*/
+        def posiblesPosiciones(estudiantes: List[String]): List[List[String]] = {
+            if (estudiantes.isEmpty) {
+                List(List())
+            } else {
+                for {
+                    estudiante <- estudiantes
+                    resto <- posiblesPosiciones(estudiantes.filterNot(_ == estudiante))
+                } yield estudiante :: resto
+            }
+        }
+        val estudiantes= List("Juan", "AnaMaria", "Pablo", "Sofía", "Alejandro")
+        val posiciones = posiblesPosiciones(estudiantes)
+        for (posicion <- posiciones){
+            println(posicion.mkString(", "))
+        }
+
+        /*PUNTO 3*/
+        //recursion simple
+        var listaNumeros = List.empty[Int]
+        def triangularSimple(n:Int):String = {
+            def calculo(numero: Int):Int = {
+                if (numero <= 0)0
+                else numero + calculo(numero-1)
+            }
+            if (n>0){
+                triangularSimple(n-1)
+                val numeroTriangular = calculo(n)
+                listaNumeros = listaNumeros:+numeroTriangular
+            }
+            listaNumeros.mkString(", ")
+        }
+        val n=6
+        println(triangularSimple(n))
+
+        //recursion de cola
+        import scala.annotation.tailrec
+        var listNumbers = List.empty[Int]
+        def triangularTail(nu:Int):String = {
+            @tailrec
+            def tailCalculo(number: Int,acumulador: Int = 0):Int={
+                if (number <=0)acumulador
+                else tailCalculo(number-1,acumulador+number)
+            }
+            @tailrec
+            def aux(nu:Int):Unit={
+                if (nu>0){
+                    val triangularNumber = tailCalculo(nu)
+                    listNumbers = listNumbers :+ triangularNumber
+                    aux(nu-1)
+                }
+            }
+            aux(nu)
+            listNumbers.reverse.mkString(", ")
+        }
+        val nu = 6
+        println(triangularTail(nu))
+
+
+        /*PUNTO 4*/
+        case class Vehiculo(nombre: String, color: String, placa: String)
+        // la lista de vehiculos
+        val vehiculos= List(Vehiculo("rayo mceen","rojo con rachos cuchau","XXX123"), Vehiculo("Initial D","Negro con blanco","ABC98A"))
+
+        val carro = "^[A-Z]{3}[0-9]{3}$".r
+        val moto = "^[A-Z]{3}[0-9]{2}[A-Z]$".r
+          
+        def identificarPlaca(vehiculos: List[Vehiculo]):List[String] = {
+            vehiculos.map { vehiculo => 
+            vehiculo.placa match {
+                case carro(_*) => "Es un Carro"
+                case moto(_*) => "Es una Moto"
+                case _ => "Placa no reconocida"
+                }
+            }
+        }
+        val respuesta = identificarPlaca(vehiculos)
+        println(respuesta)
+    }
+}
