@@ -33,25 +33,27 @@ object Main {
       math.sqrt(math.pow(x, 2) + math.pow(y, 2))
     }
 
-   def minDistancia(puntos: List[(Float, Float)],dist: ((Float, Float), (Float, Float)) => Float): Float = {
-  var min = dist(puntos(0), puntos(1))
-  for {
-    i <- puntos.indices
-    j <- i + 1 until puntos.length
-  } {
-    val p1 = puntos(i)
-    val p2 = puntos(j)
-    val distancia = dist(p1, p2)
+    def minDistancia(
+        puntos: List[(Float, Float)],
+        dist: ((Float, Float), (Float, Float)) => Float
+    ): Float = {
+      var min = dist(puntos(0), puntos(1))
+      for {
+        i <- puntos.indices
+        j <- i + 1 until puntos.length
+      } {
+        val p1 = puntos(i)
+        val p2 = puntos(j)
+        val distancia = dist(p1, p2)
 
-    // Actualiza la distancia mínima si encontramos una distancia más pequeña
-    if (distancia < min) {
-      min = distancia
+        // Actualiza la distancia mínima si encontramos una distancia más pequeña
+        if (distancia < min) {
+          min = distancia
+        }
+      }
+      min
     }
-  }
-  min
-}
 
-    
     def empresa(codigos: List[String]): List[String] = {
       val regexExito = "Exi-[!#$%&/()]{3}".r
       val regexFalabella = "[A-Z]{4}\\d{4}".r
@@ -62,7 +64,7 @@ object Main {
           case regexExito()     => "Exito"
           case regexFalabella() => "Falabella"
           case regexFlamingo()  => "Flamingo"
-          case _ => "Ninguno"
+          case _                => "Ninguno"
         }
       }
 
