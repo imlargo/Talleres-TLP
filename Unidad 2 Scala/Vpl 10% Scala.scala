@@ -46,15 +46,16 @@ object Main {
       val regexFalabella = "[A-Z]{4}\\d{4}".r
       val regexFlamingo = "FL[AEI]([0-9])(?!\\1{5}){5}".r
 
-      val getEmpresa = (codigo: String) =>
+      val getEmpresa = (codigo: String) => {
         codigo match {
-          case regexExito(_*)     => "Exito"
-          case regexFalabella(_*) => "Falabella"
-          case regexFlamingo(_*)  => "Flamingo"
+          case regexExito()     => "Exito"
+          case regexFalabella() => "Falabella"
+          case regexFlamingo()  => "Flamingo"
+          case _ => "Ninguno"
         }
+      }
 
       codigos.map((codigo) => getEmpresa(codigo))
     }
-
   }
 }
