@@ -44,7 +44,7 @@ object Main {
     def empresa(codigos: List[String]): List[String] = {
       val regexExito = "Exi-[!#$%&/()]{3}".r
       val regexFalabella = "[A-Z]{4}\\d{4}".r
-      val regexFlamingo = "FL[AEI]([0-9])(?!\\1{5}){5}".r
+      val regexFlamingo = "FL[AEI][0-9]{6}".r
 
       val getEmpresa = (codigo: String) => {
         codigo match {
