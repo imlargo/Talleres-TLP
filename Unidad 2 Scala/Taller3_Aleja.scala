@@ -110,6 +110,7 @@ object Taller3Scala{
                 case _ => "Placa no reconocida"
                 }
             }
+            
         }
         val respuesta = identificarPlaca(vehiculos)
         println(respuesta)
