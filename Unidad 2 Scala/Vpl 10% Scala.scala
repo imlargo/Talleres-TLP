@@ -2,28 +2,27 @@ object Main {
 
   def main(args: Array[String]): Unit = {
 
-   def max_min(lista: List[Int]): List[Int] = {
-  max_min_recursion(lista.tail, lista.head, lista.head)
-}
+    def max_min(lista: List[Int]): List[Int] = {
+      max_min_recursion(lista.tail, lista.head, lista.head)
+    }
 
-def max_min_recursion(lista: List[Int], max: Int, min: Int): (Int, Int) = {
-  if (lista.isEmpty) {
-    (max, min)
-  } else {
-    val head = lista.head
-    val newMax = if (head > max) head else max
-    val newMin = if (head < min) head else min
-    max_min_recursion(lista.tail, newMax, newMin)
-  }
-}
-
+    def max_min_recursion(lista: List[Int], max: Int, min: Int): List[Int] = {
+      if (lista.isEmpty) {
+        List(max, min)
+      } else {
+        val head = lista.head
+        val newMax = if (head > max) head else max
+        val newMin = if (head < min) head else min
+        max_min_recursion(lista.tail, newMax, newMin)
+      }
+    }
 
     def mcd(a: Int, b: Int): Int = {
-      if (b == 0) return a else mcd(b, a % b)
+      if (b == 0) a else mcd(b, a % b)
     }
 
     def largest(palabras: List[String]): String = {
-      return palabras.reduceLeft((palabra1, palabra2) => {
+      palabras.reduceLeft((palabra1, palabra2) => {
         if (palabra1.length() > palabra2.length()) palabra1 else palabra2
       })
     }
@@ -36,8 +35,8 @@ def max_min_recursion(lista: List[Int], max: Int, min: Int): (Int, Int) = {
 
     def minDistancia(
         puntos: List[(Float, Float)],
-        dist: ((Float, Float), (Float, Float)) => Float
-    ): Float = {
+        dist: ((Float, Float), (Float, Float)) => Double
+    ): Double = {
       var min = dist(puntos(0), puntos(1))
       for {
         i <- puntos.indices
@@ -54,7 +53,7 @@ def max_min_recursion(lista: List[Int], max: Int, min: Int): (Int, Int) = {
       }
       min
     }
-
+    
     def empresa(codigos: List[String]): List[String] = {
       val regexExito = "Exi-[!#$%&/()]{3}".r
       val regexFalabella = "[A-Z]{4}\\d{4}".r
