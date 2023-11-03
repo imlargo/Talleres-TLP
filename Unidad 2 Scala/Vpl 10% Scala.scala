@@ -2,20 +2,21 @@ object Main {
 
   def main(args: Array[String]): Unit = {
 
-    def max_min(lista: List[Int]): List[Int] = {
-      max_min_Tail(lista.tail, lista.head, lista.head)
-    }
+   def max_min(lista: List[Int]): List[Int] = {
+  max_min_recursion(lista.tail, lista.head, lista.head)
+}
 
-    def max_min_recursion(lista: List[Int], max: Int, min: Int): (Int, Int) = {
-      if (lista.isEmpty) {
-        (max, min)
-      } else {
-        val head = lista.head
-        val newMax = if (head > max) head else max
-        val newMin = if (head < min) head else min
-        max_min_recursion(lista.tail, newMax, newMin)
-      }
-    }
+def max_min_recursion(lista: List[Int], max: Int, min: Int): (Int, Int) = {
+  if (lista.isEmpty) {
+    (max, min)
+  } else {
+    val head = lista.head
+    val newMax = if (head > max) head else max
+    val newMin = if (head < min) head else min
+    max_min_recursion(lista.tail, newMax, newMin)
+  }
+}
+
 
     def mcd(a: Int, b: Int): Int = {
       if (b == 0) return a else mcd(b, a % b)
