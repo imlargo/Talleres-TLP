@@ -53,7 +53,7 @@ object Main {
       }
       min
     }
-    
+
     def empresa(codigos: List[String]): List[String] = {
       val regexExito = "Exi-[!#$%&/()]{3}".r
       val regexFalabella = "[A-Z]{4}\\d{4}".r

@@ -146,3 +146,33 @@ Nov 02, 2023 9:34:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 63
 Nov 02, 2023 9:34:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 65
+2023.11.03 16:14:26 INFO  Started: Metals version 1.1.0 in folders '/workspaces/Talleres-TLP' for client Visual Studio Code 1.84.0.
+Nov 03, 2023 4:14:28 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov 03, 2023 4:14:28 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.11.03 16:14:31 WARN  no build tool detected in workspace '/workspaces/Talleres-TLP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.11.03 16:14:31 WARN  Build server is not auto-connectable.
+2023.11.03 16:14:31 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl 10% Scala.scala
+Nov 03, 2023 4:14:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Nov 03, 2023 4:14:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Nov 03, 2023 4:14:36 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Nov 03, 2023 4:14:36 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.11.03 16:14:59 INFO  no build target found for /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl 10% Scala.scala. Using presentation compiler with project's scala-library version: 3.3.1
+Nov 03, 2023 4:15:28 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.11.03 16:17:44 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl 10% Scala.scala
+2023.11.03 16:17:45 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl 10% Scala.scala
+2023.11.03 16:17:51 WARN  no build target for: /workspaces/Talleres-TLP/Unidad 2 Scala/Vpl 10% Scala.scala
+2023.11.03 16:27:45 INFO  Started: Metals version 1.1.0 in folders '/workspaces/Talleres-TLP' for client Visual Studio Code 1.84.0.
+2023.11.03 16:27:46 WARN  Build server is not auto-connectable.
+2023.11.03 16:27:46 WARN  no build tool detected in workspace '/workspaces/Talleres-TLP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.11.03 16:32:27 INFO  Shutting down server
+2023.11.03 16:32:27 INFO  shutting down Metals
+2023.11.03 16:32:27 INFO  Exiting server
+Nov 03, 2023 4:39:19 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
