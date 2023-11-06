@@ -11,13 +11,13 @@ def isPrimo(n):
     
 
 def primos(n, isPrimo):
-    return filter(isPrimo, list(range(3, n+1)))
+    return filter(isPrimo, list(range(2, n+1)))
 
 #Deberá realizar una función que encuentre los números primos hasta un numero dado
 # (básicamente repetir el ejercicio anterior), pero usando el generador Yield en su implementación.
 
 def primos(n):
-    for num in range(3, n + 1):
+    for num in range(2, n + 1):
         if isPrimo(num):
             yield num
 
