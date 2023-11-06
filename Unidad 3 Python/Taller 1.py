@@ -10,13 +10,13 @@ def isPrimo(n):
     return True
     
 
-def primos(n, isPrimo):
+def primos1(n, isPrimo):
     return filter(isPrimo, list(range(2, n+1)))
 
 #Deberá realizar una función que encuentre los números primos hasta un numero dado
 # (básicamente repetir el ejercicio anterior), pero usando el generador Yield en su implementación.
 
-def primos(n):
+def primos2(n):
     for num in range(2, n + 1):
         if isPrimo(num):
             yield num
@@ -37,4 +37,12 @@ def fib_tail(n, a=0, b=1):
         return a
     else:
         return fib_tail(n - 1, b, a + b)
-    
+
+import time
+n = 2000
+tiempo_inicio = time.time()
+result = fib_simple(n)
+tiempo_fin = time.time()
+
+duration = tiempo_fin-tiempo_inicio
+print(f"Tiempo ejecución Fibonacci Cola: {duration} segundos \nCalculo de número en la posición {n}, el cual es: {result}")
