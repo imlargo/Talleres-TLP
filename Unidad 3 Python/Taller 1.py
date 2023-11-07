@@ -39,10 +39,15 @@ def fib_tail(n, a=0, b=1):
         return fib_tail(n - 1, b, a + b)
 
 import time
-n = 2000
-tiempo_inicio = time.time()
-result = fib_simple(n)
-tiempo_fin = time.time()
+#Tiempos de ejecucion
 
-duration = tiempo_fin-tiempo_inicio
-print(f"Tiempo ejecución Fibonacci Cola: {duration} segundos \nCalculo de número en la posición {n}, el cual es: {result}")
+n = 15
+tiempoSimple = time.time()
+result = fib_simple(n)
+tiempoSimpleFin = time.time()
+
+tiempoTail = time.time()
+result = fib_tail(n)
+tiempoTailFin = time.time()
+
+print(f"Tiempo de ejecucion para n = {n}. Fib simple: {(tiempoSimpleFin - tiempoSimple):.20f}, Fib Tail: {(tiempoTailFin - tiempoTail):.20f}")
