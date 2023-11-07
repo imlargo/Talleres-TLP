@@ -11,7 +11,7 @@ def isPrimo(n):
     
 
 def primos1(n, isPrimo):
-    return filter(isPrimo, list(range(2, n+1)))
+    return list(filter(isPrimo, list(range(2, n+1))))
 
 #Deberá realizar una función que encuentre los números primos hasta un numero dado
 # (básicamente repetir el ejercicio anterior), pero usando el generador Yield en su implementación.
@@ -20,7 +20,7 @@ def primos2(n):
     for num in range(2, n + 1):
         if isPrimo(num):
             yield num
-
+            
 #Programar Fibonacci Simple y Fibonacci Recursivo Cola comparando los tiempos de ejecución
 # y analizar la ganancia en tiempo.
     
