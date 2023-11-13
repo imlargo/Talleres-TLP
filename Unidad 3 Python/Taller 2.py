@@ -21,7 +21,7 @@ rta2 = csv[(csv['Tm'] == 'CLE') & (csv['Pos'] == 'PG')]
 #3. Encontrar los jugadores que tengan mas de 1 robo por partido y mas de 1 bloqueo por partido usando list comprehension.
 # Opcion 1: csv[(csv['STL'] > 1) & (csv['BLK'] > 1)]
 jugadores = [jugador for jugador, robos, bloqueos in zip(csv['Player'], csv['STL'], csv['BLK']) if (robos > 1 and bloqueos > 1)]
-#Resultado: Darius Garland, Craig Porter Jr.
+#Resultado: 'Scottie Barnes', 'Victor Wembanyama', 'Derrick White', 'Luguentz Dort', 'Aaron Gordon', 'Ausar Thompson', 'Herbert Jones', 'Robert Williams'
 #................................
 
 # 4. Encontrar cual es el porcentaje de canastas de 3 puntos se hacen en la liga.
