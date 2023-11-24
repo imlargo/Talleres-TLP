@@ -43,18 +43,15 @@ def procesar(comando):
         print("Comando no válido")
 
 def showData(columna, orden, args):
-    # Mapear las abreviaturas a nombres de columnas completos
-    columna = getCol(columna)
-    
+    columna = getCol(columna)    
     colsAdicionales = [getCol(key) for key in args]
     allCols = ( ["Pais"] + [columna] + colsAdicionales )
 
-    # Limpiar datos pais
     dfOlimpicos["Pais"] = dfOlimpicos["Pais"].apply(lambda pais: getPais(pais))
     print()
     print(" . . . . . . . . . . . . . ")
     print()
-    
+
     print(
         dfOlimpicos[allCols].sort_values(by = columna, ascending=(orden == 'A'))
     )
