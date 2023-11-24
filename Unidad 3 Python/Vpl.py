@@ -1,43 +1,63 @@
-
 import pandas as pd
 import re
-import sys
 
-# Cargar el DataFrame desde el archivo CSV
-df = pd.read_csv('olimpicos_suramerica.csv')
+dfOlimpicos = pd.read_csv("/content/olimpicos_suramerica.csv")
 
-# Función para procesar los comandos
-def procesar_comando(comando):
-    # Definir patrón de expresión regular para analizar el comando
-    patron = r'-C (-[VOBPTI]+) (-[VOBPTI]+) (-[AD])'
-    # Buscar coincidencias en el comando
-    coincidencia = re.match(patron, comando)
-    
-    if coincidencia:
-        # Obtener grupos de la coincidencia
-        columna_mostrar = coincidencia.group(1)
-        columna_orden = coincidencia.group(2)
-        orden = coincidencia.group(3)
-        
-        # Seleccionar las columnas a mostrar
-        columnas = [col for col in sys.argv[1:] if re.match(r'-[VOBPTI]+', col)]
-        
-        # Agregar la columna de abreviatura del país (COL)
-        columnas.append('COL')
-        
-        # Filtrar el DataFrame con las columnas seleccionadas
-        df_filtrado = df[columnas]
-        
-        # Mostrar el DataFrame ordenado según la columna y el orden especificado
-        df_ordenado = df_filtrado.sort_values(by=columna_orden, ascending=(orden == '-A'))
-        print(df_ordenado.to_string(index=False, na_rep=''))
+def getCol(columna):
+    keyCols = {
+        'V': 'Verano',
+        'I': 'Invierno',
+        'T': 'Combinados',
+        'O': 'Oro',
+        'P': 'Plata',
+        'B': 'Bronce'
+    }
+    if len(columna) == 2:
+        return keyCols[columna[0]] + columna[1] 
     else:
-        print('Comando inválido. Por favor, siga el formato especificado.')
+        return keyCols[columna]
 
-# Obtener el comando de la línea de comandos
-if len(sys.argv) > 1:
-    comando = ' '.join(sys.argv[1:])
-    procesar_comando(comando)
-else:
-    print('Por favor, ingrese un comando.')
+def getPais(pais):
+    coincidencias = re.search(
+        r'\((.*?)\)',
+        pais
+    )
+    if coincidencias:
+        return coincidencias.group(1)
+    else:
+        return pais
 
+def procesar(comando):
+    coincidencia = re.match(
+        r"-C\s*-([VITOPB][VITOPB]?)\s*-([AD])(?:\s*(.*))?",
+        comando
+    )
+
+    if coincidencia:
+        columna = coincidencia.group(1)
+        orden = coincidencia.group(2)
+        opciones = list(map(lambda s: s.replace("-", ""), coincidencia.group(3).split(" ")))
+        
+        showData(columna, orden, opciones)
+    else:
+        print("Comando no válido")
+
+def showData(columna, orden, args):
+    # Mapear las abreviaturas a nombres de columnas completos
+    columna = getCol(columna)
+    
+    colsAdicionales = [getCol(key) for key in args]
+    allCols = ( ["Pais"] + [columna] + colsAdicionales )
+
+    # Limpiar datos pais
+    dfOlimpicos["Pais"] = dfOlimpicos["Pais"].apply(lambda pais: getPais(pais))
+    print()
+    print()
+    
+    print(
+        dfOlimpicos[allCols].sort_values(by = columna, ascending=(orden == 'A'))
+    )
+
+while True:
+    comando = input("> ")
+    procesar(comando)
