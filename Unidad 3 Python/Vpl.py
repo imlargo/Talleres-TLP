@@ -52,6 +52,7 @@ def showData(columna, orden, args):
     # Limpiar datos pais
     dfOlimpicos["Pais"] = dfOlimpicos["Pais"].apply(lambda pais: getPais(pais))
     print()
+    print(" . . . . . . . . . . . . . ")
     print()
     
     print(
