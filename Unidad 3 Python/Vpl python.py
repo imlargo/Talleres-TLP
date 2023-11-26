@@ -2,7 +2,7 @@ import pandas as pd
 import re
 
 # Importar el dataset
-dfOlimpicos = pd.read_csv("/content/olimpicos_suramerica.csv")
+dfOlimpicos = pd.read_csv("./olimpicos_suramerica.csv")
 
 def getCol(columna):
     keyCols = {
@@ -77,11 +77,11 @@ while True:
 import pandas as pd
 
 # Importar el dataset
-df = pd.read_csv("/content/Horror Movies IMDb.csv")
+df = pd.read_csv("./Horror Movies IMDb.csv")
 
 # Imprimir los primeros 5 datos
 print("Imprimir los primeros 5 datos")
-df.head()
+print(df.head())
 
 # Encontrar la longitud del dataset
 print("Encontrar la longitud del dataset.")
@@ -111,7 +111,7 @@ subDf = subDf.dropna()
 subDf['Votes'] = subDf['Votes'].apply(lambda x: int(str(x).replace(",", "")))
 subDf['Gross'] = subDf['Gross'].apply(lambda x: float(str(x).replace("$", "").replace("M", "")))
 
-subDf
+print(subDf)
 
 # Dado el sub dataFrame anterior: encontrar la película más corta, la menos rentable y el promedio de duración
 print("Dado el sub dataFrame anterior: encontrar la película más corta, la menos rentable y el promedio de duración ")
@@ -150,7 +150,7 @@ print(promedios)
 # Encontrar los directores y el número de ocurrencias en el dataset, ordenados descendentemente
 print("Encontrar los directores y el número de ocurrencias en el dataset, ordenados descendentemente")
 
-df['Director'].value_counts()
+print(df['Director'].value_counts())
 
 # Encontrar la películas mejor calificadas y que pertenezcan incluyan estos 3 géneros (Horror, Mystery, Sci-Fi)
 print("Encontrar la películas mejor calificadas y que pertenezcan incluyan estos 3 géneros (Horror, Mystery, Sci-Fi)")
@@ -176,4 +176,4 @@ horror = df['Genre'].str.contains('Horror', case=False, regex=True)
 misterio = df['Genre'].str.contains('Mystery', case=False, regex=True)
 scifi = df['Genre'].str.contains('Sci-Fi', case=False, regex=True)
 
-df[horror & misterio & scifi].sort_values(by='Rating', ascending=False)
+print(df[horror & misterio & scifi].sort_values(by='Rating', ascending=False))
